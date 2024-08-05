@@ -1,0 +1,10 @@
+[
+    {"action": "addItem", "key": "junaid", "value": "khan"},
+    {"action": "addItem", "key": "1", "value": "1"},
+    {"action": "addItem", "key": "1", "value": "1"},
+    {"action": "addItem", "key": "junaid2", "value": "khan2"},
+    {"action": "addItem", "key": "junaid3", "value": "khan3"},
+    {"action": "deleteItem", "key": "junaid2"},
+    {"action": "getItem", "key": "junaid2"},
+    {"action": "getAllItems"}
+]
