@@ -10,7 +10,10 @@ import (
 const (
 	RabbitMQURL = "amqp://guest:guest@localhost:5672/"
 	QueueName   = "commands"
-	OutputFile  = "output.txt"
+)
+
+var (
+	OutputFile = "output.txt"
 )
 
 // AppendToFile appends content to the output file
