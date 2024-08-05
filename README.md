@@ -7,11 +7,7 @@ Que-Server is a high-performance server application built specifically for ARM64
 - [Getting Started](#getting-started)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Building from Source](#building-from-source)
-- [Client Setup](#client-setup)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+
 
 ## Getting Started
 
@@ -51,3 +47,39 @@ You can quickly set up **Que-Client** using running client.go file :
 ```bash
 cd client/
 go run client.go
+```
+
+## Usage
+
+### Run Client
+
+You can quickly set up **Que-Client** using running client.go file it take parameters in two way either using file or flags :
+
+```bash
+go run client.go -file=commands.json 
+```
+command.json file format
+```bash 
+
+[
+    {"action": "addItem", "key": "junaid", "value": "khan"},
+    {"action": "addItem", "key": "1", "value": "1"},
+    {"action": "addItem", "key": "1", "value": "1"},
+    {"action": "addItem", "key": "junaid2", "value": "khan2"},
+    {"action": "addItem", "key": "junaid3", "value": "khan3"},
+    {"action": "deleteItem", "key": "junaid2"},
+    {"action": "getItem", "key": "junaid2"},
+    {"action": "getAllItems"}
+]
+
+```
+
+You can quickly set up **Que-Client** using running client.go file it take parameters in two way either using file or flags :
+
+```bash
+go run client.go -action=addItem -key=junaid -value=khan
+go run client.go -action=deleteItem -key=junaid
+go run client.go -action=getItem 
+go run client.go -action=getAllItems 
+
+```
